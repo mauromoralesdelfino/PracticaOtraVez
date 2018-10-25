@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:id="@+id/txtNombre"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:id="@+id/txtCantidad"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_column="2"
+            android:id="@+id/txtPrecio"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <ImageButton
+            android:src="@drawable/minus"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_column="0"
+            android:id="@+id/btnMenos"/>
+
+        <ImageButton
+            android:src="@drawable/plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_column="2"
+            android:id="@+id/btnMas"/>
+
+
+    </GridLayout>
+
+
+</LinearLayout>
